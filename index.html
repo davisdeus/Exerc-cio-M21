@@ -1,12 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./dist/css/style.css">
 </head>
+
 <body>
+
+    <header class="hero" class="header">
+        
+        <div class="header__container">
+            
+            <h1 class="header__logo">
+                <img width="100px" src="./dist/images/header_logo/header.png" alt="">
+            </h1>
+
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#">Assine Agora</a>
+                </li>
+                
+                <li class="header__links__item">
+                    <a href="#">Entrar</a>
+                </li>
+            </ul>
+            
+        </div>
+    </header>
     
+    
+    
+
+    <section class="curiosity">
+        <h2>Curiosidades</h2>
+
+        <nav class="curiosity__nav">
+
+            <button onclick="toggle('conteudo')"> Locais de gravação </button>
+
+            <button data-nav-button="elenco" class="curiosity__nav__button">
+                Elenco
+            </button>
+
+            <button data-nav-button="historia" class="curiosity__nav__button">
+                História
+            </button>
+        </nav>
+
+        <ul id="conteudo" >
+            
+            <li  class="curiosity__list__item">
+                <img src="./dist/images/recording locations/Cartagena.jpg" alt="">
+                <p>
+                    Uma cidade costeira na Colômbia, conhecida por suas belas praias e arquitetura histórica.
+                </p>
+            </li>
+
+            <li  class="curiosity__list__item">
+                <img src="./dist/images/recording locations/Bogotá.jpg" alt="">
+                <p>
+                    A capital da Colômbia, situada nos Andes, com uma mistura vibrante de cultura e história.
+                </p>
+            </li>
+
+            <li  class="curiosity__list__item">
+                <img src="./dist/images/recording locations/Isla Barú.jpg" alt="">
+                <p>
+                    Uma ilha paradisíaca próxima a Cartagena, com praias de areia branca e águas cristalinas.
+                </p>
+            </li>
+
+            <li  class="curiosity__list__item">
+                <img src="./dist/images/recording locations/Imperial County.jpg" alt="">
+                <p>
+                    Uma região no sul da Califórnia, nos Estados Unidos, conhecida por suas paisagens desérticas e
+                    vastidão.
+                </p>
+            </li>
+        </ul>
+
+        <ul data-nav-button="elenco" class="curiosity__list curiosity__list--is-active ">
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Bill Camp (Vampiro).webp" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Cristal Aparicio (Rocío).jpg" lt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Eduardo Verástegui (Paul).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Gary Basaraba (Earl Buchanan).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Gerardo Taracena (El Alacrán).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Gustavo Sánchez Parra (El Calacas).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Javier Godino (Jorge).webp" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Jim Caviezel (Tim Ballard).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/José Zúñiga (Roberto).webp" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Kris Avedisian (Ernst Oshinsky).webp" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Kurt Fuller (Frost).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Lucás Ávila (Miguel).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Manny Perez(Fuego).webp" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Mira Sorvino (Katherine Ballard).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Scott Haze (Chris).webp" alt="">
+                <p>
+
+                </p>
+            </li>
+
+            <li class="curiosity__list__item">
+                <img src="./dist/images/cast/Yessica Borroto (Giselle).jpg" alt="">
+                <p>
+
+                </p>
+            </li>
+        </ul>
+
+        <ul data-nav-button="historia" class="curiosity__list curiosity__list--is-active ">
+            <li class="curiosity__list__item">
+                <img src="./dist/images/historia/OIP.jpg" alt="">
+                <p>
+                    O filme “Som da Liberdade” é um drama e ação baseado em uma história real de Tim Ballard, ex-agente
+                    do governo americano responsável por uma missão de resgate de crianças vítimas de tráfico sexual. O
+                    longa-metragem tem recebido atenção tanto
+                    nos Estados Unidos quanto no Brasil, onde se tornou um fenômeno controverso nas bilheterias.
+                </p>
+                <p>
+                    Com uma temática sensível e atual, “Som da Liberdade” conta a história de um ex-agente do governo
+                    americano que abandona sua carreira para fundar uma organização sem fins lucrativos que tem como
+                    objetivo resgatar crianças vítimas de tráfico sexual. O filme tem sido elogiado por alguns críticos
+                    por sua abordagem corajosa e realista do assunto, mas também tem recebido críticas por sua abordagem
+                    polêmica e por sua suposta conexão com grupos políticos conservadores.
+                </p>
+                <p>
+                    O filme “Som da Liberdade” é baseado em uma história real e conta a vida de Tim Ballard, ex-agente
+                    da inteligência dos Estados Unidos, que liderou um grupo chamado “Operation Underground Railroad”. A
+                    missão do grupo era resgatar crianças de uma rede de exploração sexual. O filme foi dirigido por
+                    Alejandro Monteverde e estreou no Brasil em 21 de setembro de 2023.
+                </p>
+
+                <p>
+                    Segundo o diretor, o filme busca despertar uma discussão sobre o tráfico de crianças e é baseado em
+                    fatos reais, mas não se trata de um documentário. A trama mostra a luta de Tim Ballard em salvar
+                    crianças da exploração sexual e a dificuldade que ele enfrentou para conseguir realizar essa missão.
+                </p>
+
+                <p>
+                    O filme é cercado por polêmicas e tem despertado o interesse de comunidades cristãs aos cinemas.
+                    Isso porque, além da temática abordada, o filme tem uma forte mensagem religiosa e mostra como a fé
+                    de Tim Ballard o ajudou a enfrentar as dificuldades e a continuar lutando pela liberdade das
+                    crianças.
+                </p>
+
+                <p>
+                    
+                </p>
+            </li>
+
+
+
+
+        </ul>
+
+    </section>
+
+    <script src="./dist/scripts/script.js"></script>
+
 </body>
+
 </html>

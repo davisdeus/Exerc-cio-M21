@@ -1,0 +1,19 @@
+.curiosity__list {
+    padding: 2vw 5.6vw;
+    min-height: 50vw;
+    display: none;
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        &__button {
+            margin: 32px 8px;
+            padding: 8px;
+            border: none;
+            border-bottom: 2.5px solid transparent;
+            cursor: pointer;
+        }
+
+
+    }
+}

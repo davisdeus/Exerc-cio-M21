@@ -1,0 +1,41 @@
+@use './variaveis';
+
+.header {
+
+    &__container {
+
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 30px;
+
+    }
+
+    &__logo {
+        transition: opacity .5s ease;
+
+        @media (max-height: 768px) {
+            max-width: 64px;
+        }
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            list-style: none;
+            padding: 0 2px;         
+            margin-top: 10px;
+
+            a {
+                text-decoration: none;
+                background-color: variaveis.$corDoButton;
+                padding: 8px;
+                border-radius: 3px;
+            }
+            a:hover {
+                transition: .5s ease;
+                background-color: variaveis.$corDoButtonSecundario;
+            }
+        }
+    }
+}
