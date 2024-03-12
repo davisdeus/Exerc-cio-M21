@@ -32,14 +32,14 @@
     </header>
     
     
-    
-
     <section class="curiosity">
         <h2>Curiosidades</h2>
 
         <nav class="curiosity__nav">
 
-            <button onclick="toggle('conteudo')"> Locais de gravação </button>
+            <button data-nav-button="locaisDeGravacao" class="curiosity__nav__button curiosity__nav__button--is-active"> 
+                Locais de gravação 
+            </button>
 
             <button data-nav-button="elenco" class="curiosity__nav__button">
                 Elenco
@@ -50,31 +50,31 @@
             </button>
         </nav>
 
-        <ul id="conteudo" >
+        <ul data-nav-id="locaisDeGravacao" class="curiosity__list curiosity__list--is-active">
             
             <li  class="curiosity__list__item">
-                <img src="./dist/images/recording locations/Cartagena.jpg" alt="">
+                <img src="./dist/images/recording locations/Cartagena.jpg" alt="Cidade de Cartagena">
                 <p>
                     Uma cidade costeira na Colômbia, conhecida por suas belas praias e arquitetura histórica.
                 </p>
             </li>
 
             <li  class="curiosity__list__item">
-                <img src="./dist/images/recording locations/Bogotá.jpg" alt="">
+                <img src="./dist/images/recording locations/Bogotá.jpg" alt="Cidade de Bogotá">
                 <p>
                     A capital da Colômbia, situada nos Andes, com uma mistura vibrante de cultura e história.
                 </p>
             </li>
 
             <li  class="curiosity__list__item">
-                <img src="./dist/images/recording locations/Isla Barú.jpg" alt="">
+                <img src="./dist/images/recording locations/Isla Barú.jpg" alt="Cidade de Isla Barú">
                 <p>
                     Uma ilha paradisíaca próxima a Cartagena, com praias de areia branca e águas cristalinas.
                 </p>
             </li>
 
             <li  class="curiosity__list__item">
-                <img src="./dist/images/recording locations/Imperial County.jpg" alt="">
+                <img src="./dist/images/recording locations/Imperial County.jpg" alt="Cidade de Imperial County">
                 <p>
                     Uma região no sul da Califórnia, nos Estados Unidos, conhecida por suas paisagens desérticas e
                     vastidão.
@@ -82,123 +82,123 @@
             </li>
         </ul>
 
-        <ul data-nav-button="elenco" class="curiosity__list curiosity__list--is-active ">
+        <ul data-nav-id="elenco" class="curiosity__list">
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Bill Camp (Vampiro).webp" alt="">
+                <img src="./dist/images/cast/Bill Camp (Vampiro).webp" alt="Personagem (a) Vampiro">
                 <p>
-
+                    Ator(a):Bill Camp
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Cristal Aparicio (Rocío).jpg" lt="">
+                <img src="./dist/images/cast/Cristal Aparicio (Rocío).jpg" alt="Personagem (a) Rocío">
                 <p>
-
+                    Ator(a):/Cristal Aparicio
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Eduardo Verástegui (Paul).jpg" alt="">
+                <img src="./dist/images/cast/Eduardo Verástegui (Paul).jpg" alt="Personagem (a) Paul">
                 <p>
-
+                    Ator(a):Eduardo Verástegui
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Gary Basaraba (Earl Buchanan).jpg" alt="">
+                <img src="./dist/images/cast/Gary Basaraba (Earl Buchanan).jpg" alt="Personagem (a) Earl Buchanan">
                 <p>
-
+                    Ator(a):Gary Basaraba
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Gerardo Taracena (El Alacrán).jpg" alt="">
+                <img src="./dist/images/cast/Gerardo Taracena (El Alacrán).jpg" alt="Personagem (a) El Alacrán">
                 <p>
-
+                    Ator(a):Gerardo Taracena
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Gustavo Sánchez Parra (El Calacas).jpg" alt="">
+                <img src="./dist/images/cast/Gustavo Sánchez Parra (El Calacas).jpg" alt="Personagem (a) El Calacas">
                 <p>
-
+                    Ator(a):Gustavo Sánchez Parra
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Javier Godino (Jorge).webp" alt="">
+                <img src="./dist/images/cast/Javier Godino (Jorge).webp" alt="Personagem (a) Jorge">
                 <p>
-
+                    Ator(a):Javier Godino
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Jim Caviezel (Tim Ballard).jpg" alt="">
+                <img src="./dist/images/cast/Jim Caviezel (Tim Ballard).jpg" alt="Personagem (a) Tim Ballard">
                 <p>
-
+                    Ator(a):Jim Caviezel
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/José Zúñiga (Roberto).webp" alt="">
+                <img src="./dist/images/cast/José Zúñiga (Roberto).webp" alt="Personagem (a) Roberto">
                 <p>
-
+                    Ator(a):José Zúñiga
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Kris Avedisian (Ernst Oshinsky).webp" alt="">
+                <img src="./dist/images/cast/Kris Avedisian (Ernst Oshinsky).webp" alt="Personagem (a) Ernst Oshinsky">
                 <p>
-
+                    Ator(a):Kris Avedisian
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Kurt Fuller (Frost).jpg" alt="">
+                <img src="./dist/images/cast/Kurt Fuller (Frost).jpg" alt="Personagem (a) Frost">
                 <p>
-
+                    Ator(a):Kurt Fuller
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Lucás Ávila (Miguel).jpg" alt="">
+                <img src="./dist/images/cast/Lucás Ávila (Miguel).jpg" alt="Personagem (a) Miguel">
                 <p>
-
+                    Ator(a):Lucás Ávila
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Manny Perez(Fuego).webp" alt="">
+                <img src="./dist/images/cast/Manny Perez(Fuego).webp" alt="Personagem (a) Fuego">
                 <p>
-
+                    Ator(a):Manny Perez
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Mira Sorvino (Katherine Ballard).jpg" alt="">
+                <img src="./dist/images/cast/Mira Sorvino (Katherine Ballard).jpg" alt="Personagem (a) Katherine Ballard">
                 <p>
-
+                    Ator(a):Mira Sorvino
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Scott Haze (Chris).webp" alt="">
+                <img src="./dist/images/cast/Scott Haze (Chris).webp" alt="Personagem (a) Chris">
                 <p>
-
+                    Ator(a):Scott Haze
                 </p>
             </li>
 
             <li class="curiosity__list__item">
-                <img src="./dist/images/cast/Yessica Borroto (Giselle).jpg" alt="">
+                <img src="./dist/images/cast/Yessica Borroto (Giselle).jpg" alt="Personagem (a) Giselle">
                 <p>
-
+                    Ator(a):Yessica Borroto
                 </p>
             </li>
         </ul>
 
-        <ul data-nav-button="historia" class="curiosity__list curiosity__list--is-active ">
+        <ul data-nav-id="historia" class="curiosity__list">
             <li class="curiosity__list__item">
-                <img src="./dist/images/historia/OIP.jpg" alt="">
+                <img src="./dist/images/historia/OIP.jpg" alt="Tim Ballard">
                 <p>
                     O filme “Som da Liberdade” é um drama e ação baseado em uma história real de Tim Ballard, ex-agente
                     do governo americano responsável por uma missão de resgate de crianças vítimas de tráfico sexual. O
@@ -244,7 +244,11 @@
 
     </section>
 
-    <script src="./dist/scripts/script.js"></script>
+    <footer>
+
+    </footer>
+
+    <script src="./src/scripts/script.js"></script>
 
 </body>
 

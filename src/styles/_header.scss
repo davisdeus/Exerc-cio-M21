@@ -28,13 +28,16 @@
 
             a {
                 text-decoration: none;
-                background-color: variaveis.$corDoButton;
+                background-color: variaveis.$corDeFundo;
+                color: variaveis.$corDeTexto;
                 padding: 8px;
                 border-radius: 3px;
+                border: 2px solid;
+                cursor: pointer;
             }
             a:hover {
                 transition: .5s ease;
-                background-color: variaveis.$corDoButtonSecundario;
+                background-color: variaveis.$corButtonPrimario;
             }
         }
     }
