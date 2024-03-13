@@ -2,6 +2,7 @@
 
 .curiosity {
     padding: 2vw 5.6vw;
+    background-color: variaveis.$corFundoSecundario;
 
     h2 {
         padding: 16px 0;
@@ -18,13 +19,17 @@
             color: variaveis.$corDeTexto;
             border: none;
             padding-bottom: 5px;
-            background: none;
+            background: transparent;
             text-transform: uppercase;
             margin: 0 1vw;
             cursor: pointer;
             border-bottom: 5px solid transparent;
             
             transition: .9s ease;
+
+            @media (max-width:768px) {
+                font-size: 15px;
+            }
 
             &--is-active {
                 border-bottom: 5px solid variaveis.$corDeTexto;
@@ -38,6 +43,10 @@
         display: none;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr;
+        }
 
         &--is-active {
             display: grid;

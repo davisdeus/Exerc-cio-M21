@@ -1,6 +1,28 @@
 @use './variaveis';
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: transparent;
+    padding-top: 1px;
+
+    &--is-hidden {
+        background-color: transparent;
+
+        .header {
+
+            &__logo,
+            &__links__item:first-child {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity .5s ease;
+            }
+        }
+
+    }
 
     &__container {
 
@@ -23,7 +45,7 @@
 
         &__item {
             list-style: none;
-            padding: 0 2px;         
+            padding: 0 2px;
             margin-top: 10px;
 
             a {
@@ -34,7 +56,14 @@
                 border-radius: 3px;
                 border: 2px solid;
                 cursor: pointer;
+                text-transform: uppercase;
+
+                @media (max-height: 768px) {
+                    font-size: 6px;
+                }
+
             }
+
             a:hover {
                 transition: .5s ease;
                 background-color: variaveis.$corButtonPrimario;

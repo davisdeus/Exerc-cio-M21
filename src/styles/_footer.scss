@@ -1,0 +1,51 @@
+@use './variaveis';
+
+.footer {
+    background: variaveis.$corDeFundoSecundario;
+
+    &__container {
+
+        &__app {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin: 0 62px;
+            color: variaveis.$corDeTextoSecundario;
+            padding: 16px;
+
+            @media (max-width:768px) {
+                display: block;
+            }
+
+            &__list {
+                padding-right: 24px;
+                border-right: 1px solid;
+
+                @media (max-width:768px) {
+                    border: none;
+                    border-bottom: 1px solid;
+                    padding-bottom: 16px;
+
+                }
+
+                margin-top: 18px;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+
+                    &__links {
+                        margin-right: 16px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer__footer {
+        color: variaveis.$corDeTextoSecundario;
+        padding: 52px ;
+    }
+}

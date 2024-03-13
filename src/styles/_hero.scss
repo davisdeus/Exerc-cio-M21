@@ -6,4 +6,7 @@
 
     height: 95vh;
     margin: 15PX;
+    @media (max-width:768px) {
+        max-height: 40vh;
+    }
 }
