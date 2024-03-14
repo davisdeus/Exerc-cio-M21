@@ -1,12 +1,53 @@
 .hero {
-    background-image: url(../images/header_logo/Group\ 1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 52px;
+    margin-top: -95PX;
 
-    height: 95vh;
-    margin: 15PX;
     @media (max-width:768px) {
-        max-height: 40vh;
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+    @media (max-width:1024px) {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+
+    .hero1 {
+        background-image: url(../images/header_logo/Group\ 1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+
+        height: 95vh;
+        width: 100%;
+        margin-right: 32px;
+        
+        @media (max-width:768px) {
+            max-height: 40vh;
+            margin-bottom: 32px;
+        }
+        @media (max-width:1024px) {
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+    }
+    
+    .hero2 {
+        width: 100%;
+        border: 13px solid;
+        border-radius: 8px;
+
+        @media (max-width:1024px) {
+            display: block;
+            width: 95%;
+            margin: 0 auto  ;
+        }
     }
 }
